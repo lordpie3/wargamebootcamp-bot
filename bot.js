@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const prefix = '!';
 const commands = require('./ArmoryCommands.js');
 const commonCommands = require('./Commands.js');
+require("dotenv").config();
 const token = process.env.token;
 const format = require('./Formatting.js');
 const fs = require('fs');
@@ -19,6 +20,7 @@ const results = [];
 var units = require('./Data/UnitData.json');
 var stringSimilarity = require('string-similarity');
 const MSGES = require('./Mongoose/messageSchema.js');
+require("dotenv").config();
 
 client.once('ready', () => {
   console.log('Bot running in the index file.');
