@@ -8,4 +8,5 @@ to add the bot to discord, here you will also generate your discord token.
 6) To stop the app use ctrl + C
 7) You can use the bot in the server as long as its running.
 
-This is temporary until their is dedicated hosting.
+This is temporary until there is dedicated hosting.
+Also make sure that in applications > your bot > bot Message Content Intent is turned on.

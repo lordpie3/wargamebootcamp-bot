@@ -4,7 +4,8 @@
   "description": "Useless, maybe kinda useful bot",
   "main": "index.js",
   "scripts": {
-    "test": "none"
+    "test": "none",
+    "start": "node bot.js"
   },
   "repository": {
     "type": "git",
