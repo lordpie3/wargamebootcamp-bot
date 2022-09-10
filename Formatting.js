@@ -409,7 +409,7 @@ module.exports.formatting = (i) => {
     }
 
     category = ('**Plane** | **Nationality**: ' + i.MotherCountry + ' | ' + proto);
-    movement = ('**Movement**', '**Type**: ' + i.MovementType + ' | **Speed**: ' + Math.trunc(i.MaxSpeed) + 'kph | **Stealth**: ' + i.Stealth + ' \n **Air Optics**: ' + i.OpticalStrengthAir + ' | **ECM**: ' + (-100*i.ECM) + "%";
+    movement = ('**Movement**', '**Type**: ' + i.MovementType + ' | **Speed**: ' + Math.trunc(i.MaxSpeed) + 'kph | **Stealth**: ' + i.Stealth + ' \n **Air Optics**: ' + i.OpticalStrengthAir + ' | **ECM**: ' + (-100*i.ECM) + "%");
     if (i.Weapon1Caliber == 'Antiradar' || i.Weapon2Caliber == 'Antiradar' || i.Weapon3Caliber == 'Antiradar') {
       title = title + ' <:nato_sead:583815605124202507>';
     }
