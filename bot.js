@@ -285,7 +285,7 @@ client.on('message', async message => {
     switch (commandName) {
       case 'unspecguide':
         message.reply('Here is the beginner unspec deck building guide: https://www.reddit.com/r/wargamebootcamp/comments/5m0wmz/meta_a_guide_to_unspec_deckbuilding/');
-        break;
+        break;        
       case 'specprimer':
         message.reply('Here is the spec primer: https://www.reddit.com/r/wargamebootcamp/comments/8pppyi/meta_a_basic_primer_to_spec_decks/');
         break;
