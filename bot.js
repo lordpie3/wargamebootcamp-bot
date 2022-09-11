@@ -283,6 +283,7 @@ client.on('message', async message => {
 
   if (commoncommands == true) {
     switch (commandName) {
+        
       case 'unspecguide':
         message.reply('Here is the beginner unspec deck building guide: https://www.reddit.com/r/wargamebootcamp/comments/5m0wmz/meta_a_guide_to_unspec_deckbuilding/');
         break;        
@@ -316,6 +317,7 @@ client.on('message', async message => {
       case 'rankedmaps':
         message.reply('1v1: \n\n **Mud fight** \n\n **Plunjing valley** \n\n **Paddy field** \n\n **Punchbowl** \n\n **Hell in a very small place** \n\n **Highway to seoul** \n\n **Nuclear winter**');
         break;
+        
     }
   }
 });
