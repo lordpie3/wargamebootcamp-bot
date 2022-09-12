@@ -120,8 +120,8 @@ module.exports.formatting = (i) => {
 
     "Poland": ":flag_pl:",
     'Czechoslavakia': ':flag_cz:',
-    'Soviet Union': '<:flag_sr:581691631523069952>',
-    'Yugoslavia': '<:emote:581895502568620110>',
+    'Soviet Union': '<:ussrthonk:>',
+    'Yugoslavia': 'Yugoslavia',
     'Finland': ':flag_fi:',
     'East Germany': '<:unknown:581897376000638996>',
     'China': ':flag_cn:',
@@ -409,7 +409,7 @@ module.exports.formatting = (i) => {
     }
 
     category = ('**Plane** | **Nationality**: ' + i.MotherCountry + ' | ' + proto);
-    movement = ('**Movement**', '**Type**: ' + i.MovementType + ' | **Speed**: ' + Math.trunc(i.MaxSpeed) + 'kph | **Stealth**: ' + i.Stealth + ' \n **Air Optics**: ' + i.OpticalStrengthAir);
+    movement = ('**Movement**', '**Type**: ' + i.MovementType + ' | **Speed**: ' + Math.trunc(i.MaxSpeed) + 'kph | **Stealth**: ' + i.Stealth + ' \n **Air Optics**: ' + i.OpticalStrengthAir + ' | **ECM**: ' + (-100*i.ECM) + "%");
     if (i.Weapon1Caliber == 'Antiradar' || i.Weapon2Caliber == 'Antiradar' || i.Weapon3Caliber == 'Antiradar') {
       title = title + ' <:nato_sead:583815605124202507>';
     }
