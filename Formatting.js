@@ -120,7 +120,7 @@ module.exports.formatting = (i) => {
 
     "Poland": ":flag_pl:",
     'Czechoslavakia': ':flag_cz:',
-    'Soviet Union': ':ussrthonk:',
+    'Soviet Union': '<:ussrthonk:555418230873784321>',
     'Yugoslavia': 'Yugoslavia',
     'Finland': ':flag_fi:',
     'East Germany': '<:unknown:581897376000638996>',
