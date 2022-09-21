@@ -108,11 +108,11 @@ module.exports.formatting = (i) => {
   const weapon7rof = Math.round(60 * i.Weapon7ShotsPerSalvo / ((i.Weapon7ShotsPerSalvo - 1) * i.Weapon7TimeBetweenShots - -i.Weapon7TimeBetweenSalvos));
   const weapon8rof = Math.round(60 * i.Weapon8ShotsPerSalvo / ((i.Weapon8ShotsPerSalvo - 1) * i.Weapon8TimeBetweenShots - -i.Weapon8TimeBetweenSalvos));
 
-  let rookieavail = ('<:unvet1:583396237936427039>' + i.RookieDeployableAmount + '   ');
-  let trainedavail = ('<:unvet2:583396237655670825>' + i.TrainedDeployableAmount + '   ');
-  let hardenedavail = ('<:unvet3:583396237626048517>' + i.HardenedDeployableAmount + '   ');
-  let veteranavail = ('<:unvet4:583396237550813229>' + i.VeteranDeployableAmount + '   ');
-  let eliteavail = ('<:unvet5:583396237601013779>' + i.EliteDeployableAmount + '   ');
+  let rookieavail = ('Rookie: ' + i.RookieDeployableAmount + '   ');
+  let trainedavail = ('Trained: ' + i.TrainedDeployableAmount + '   ');
+  let hardenedavail = ('Hardened: ' + i.HardenedDeployableAmount + '   ');
+  let veteranavail = ('Veteran: ' + i.VeteranDeployableAmount + '   ');
+  let eliteavail = ('Elite: ' + i.EliteDeployableAmount + '   ');
 
 
   const redfor = {
@@ -120,7 +120,7 @@ module.exports.formatting = (i) => {
 
     "Poland": ":flag_pl:",
     'Czechoslavakia': ':flag_cz:',
-    'Soviet Union': '<:ussrthonk:>',
+    'Soviet Union': ':ussrthonk:',
     'Yugoslavia': 'Yugoslavia',
     'Finland': ':flag_fi:',
     'East Germany': '<:unknown:581897376000638996>',
@@ -261,19 +261,19 @@ module.exports.formatting = (i) => {
   }
 
   if (i.RookieDeployableAmount !== '0') {
-    rookieavail = ('<:vet1:583396237936689155> **' + i.RookieDeployableAmount + '**   ');
+    rookieavail = ('Rookie: **' + i.RookieDeployableAmount + '**   ');
   };
   if (i.TrainedDeployableAmount !== '0') {
-    trainedavail = ('<:vet2:583396237735362593> **' + i.TrainedDeployableAmount + '**   ');
+    trainedavail = ('Trained: **' + i.TrainedDeployableAmount + '**   ');
   };
   if (i.HardenedDeployableAmount !== '0') {
-    hardenedavail = ('<:vet3:583396237890551808> **' + i.HardenedDeployableAmount + '**   ');
+    hardenedavail = ('Hardened: **' + i.HardenedDeployableAmount + '**   ');
   };
   if (i.VeteranDeployableAmount !== '0') {
-    veteranavail = ('<:vet4:583396237873643529> **' + i.VeteranDeployableAmount + '**   ');
+    veteranavail = ('Veteran: **' + i.VeteranDeployableAmount + '**   ');
   };
   if (i.EliteDeployableAmount !== '0') {
-    eliteavail = ('<:vet5:583396238053867558> **' + i.EliteDeployableAmount + '**   ');
+    eliteavail = ('Elite: **' + i.EliteDeployableAmount + '**   ');
   };
 
   // the dude that made the final data csv bungled the helo range for autocannons
